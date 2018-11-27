@@ -1621,20 +1621,20 @@ namespace Plugin.Firebase.Android
 			// aapt resource value: 0x7f090003
 			public static int com_facebook_profilepictureview_preset_size_small = 2131296259;
 			
+			// aapt resource value: 0x7f09006e
+			public static int compat_button_inset_horizontal_material = 2131296366;
+			
+			// aapt resource value: 0x7f09006f
+			public static int compat_button_inset_vertical_material = 2131296367;
+			
+			// aapt resource value: 0x7f090070
+			public static int compat_button_padding_horizontal_material = 2131296368;
+			
+			// aapt resource value: 0x7f090071
+			public static int compat_button_padding_vertical_material = 2131296369;
+			
 			// aapt resource value: 0x7f090072
-			public static int compat_button_inset_horizontal_material = 2131296370;
-			
-			// aapt resource value: 0x7f090073
-			public static int compat_button_inset_vertical_material = 2131296371;
-			
-			// aapt resource value: 0x7f090074
-			public static int compat_button_padding_horizontal_material = 2131296372;
-			
-			// aapt resource value: 0x7f090075
-			public static int compat_button_padding_vertical_material = 2131296373;
-			
-			// aapt resource value: 0x7f090076
-			public static int compat_control_corner_material = 2131296374;
+			public static int compat_control_corner_material = 2131296370;
 			
 			// aapt resource value: 0x7f09005d
 			public static int disabled_alpha_material_dark = 2131296349;
@@ -1663,35 +1663,35 @@ namespace Plugin.Firebase.Android
 			// aapt resource value: 0x7f090065
 			public static int hint_pressed_alpha_material_light = 2131296357;
 			
+			// aapt resource value: 0x7f090073
+			public static int notification_action_icon_size = 2131296371;
+			
+			// aapt resource value: 0x7f090074
+			public static int notification_action_text_size = 2131296372;
+			
+			// aapt resource value: 0x7f090075
+			public static int notification_big_circle_margin = 2131296373;
+			
+			// aapt resource value: 0x7f090076
+			public static int notification_content_margin_start = 2131296374;
+			
 			// aapt resource value: 0x7f090077
-			public static int notification_action_icon_size = 2131296375;
+			public static int notification_large_icon_height = 2131296375;
 			
 			// aapt resource value: 0x7f090078
-			public static int notification_action_text_size = 2131296376;
+			public static int notification_large_icon_width = 2131296376;
 			
 			// aapt resource value: 0x7f090079
-			public static int notification_big_circle_margin = 2131296377;
-			
-			// aapt resource value: 0x7f09006f
-			public static int notification_content_margin_start = 2131296367;
+			public static int notification_main_column_padding_top = 2131296377;
 			
 			// aapt resource value: 0x7f09007a
-			public static int notification_large_icon_height = 2131296378;
+			public static int notification_media_narrow_margin = 2131296378;
 			
 			// aapt resource value: 0x7f09007b
-			public static int notification_large_icon_width = 2131296379;
-			
-			// aapt resource value: 0x7f090070
-			public static int notification_main_column_padding_top = 2131296368;
-			
-			// aapt resource value: 0x7f090071
-			public static int notification_media_narrow_margin = 2131296369;
+			public static int notification_right_icon_size = 2131296379;
 			
 			// aapt resource value: 0x7f09007c
-			public static int notification_right_icon_size = 2131296380;
-			
-			// aapt resource value: 0x7f09006e
-			public static int notification_right_side_padding_top = 2131296366;
+			public static int notification_right_side_padding_top = 2131296380;
 			
 			// aapt resource value: 0x7f09007d
 			public static int notification_small_icon_background_padding = 2131296381;
@@ -3943,8 +3943,8 @@ namespace Plugin.Firebase.Android
 			// aapt resource value: 0x7f080172
 			public static int TextAppearance_Compat_Notification_Info_Media = 2131231090;
 			
-			// aapt resource value: 0x7f08017d
-			public static int TextAppearance_Compat_Notification_Line2 = 2131231101;
+			// aapt resource value: 0x7f080179
+			public static int TextAppearance_Compat_Notification_Line2 = 2131231097;
 			
 			// aapt resource value: 0x7f080176
 			public static int TextAppearance_Compat_Notification_Line2_Media = 2131231094;
@@ -3952,14 +3952,14 @@ namespace Plugin.Firebase.Android
 			// aapt resource value: 0x7f080173
 			public static int TextAppearance_Compat_Notification_Media = 2131231091;
 			
-			// aapt resource value: 0x7f080179
-			public static int TextAppearance_Compat_Notification_Time = 2131231097;
+			// aapt resource value: 0x7f08017a
+			public static int TextAppearance_Compat_Notification_Time = 2131231098;
 			
 			// aapt resource value: 0x7f080174
 			public static int TextAppearance_Compat_Notification_Time_Media = 2131231092;
 			
-			// aapt resource value: 0x7f08017a
-			public static int TextAppearance_Compat_Notification_Title = 2131231098;
+			// aapt resource value: 0x7f08017b
+			public static int TextAppearance_Compat_Notification_Title = 2131231099;
 			
 			// aapt resource value: 0x7f080175
 			public static int TextAppearance_Compat_Notification_Title_Media = 2131231093;
@@ -4273,11 +4273,11 @@ namespace Plugin.Firebase.Android
 			// aapt resource value: 0x7f080171
 			public static int Widget_AppCompat_Toolbar_Button_Navigation = 2131231089;
 			
-			// aapt resource value: 0x7f08017b
-			public static int Widget_Compat_NotificationActionContainer = 2131231099;
-			
 			// aapt resource value: 0x7f08017c
-			public static int Widget_Compat_NotificationActionText = 2131231100;
+			public static int Widget_Compat_NotificationActionContainer = 2131231100;
+			
+			// aapt resource value: 0x7f08017d
+			public static int Widget_Compat_NotificationActionText = 2131231101;
 			
 			// aapt resource value: 0x7f080013
 			public static int com_facebook_activity_theme = 2131230739;

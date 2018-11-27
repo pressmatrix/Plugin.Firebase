@@ -1,0 +1,47 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "/Users/tobiasbuchholz/Work/PressMatrix/xamarin/PressMatrix/Plugin.Firebase/src/Plugin.Firebase/Plugin.Firebase.csproj",
+    "projectName": "Plugin.Firebase",
+    "projectPath": "/Users/tobiasbuchholz/Work/PressMatrix/xamarin/PressMatrix/Plugin.Firebase/src/Plugin.Firebase/Plugin.Firebase.csproj",
+    "outputPath": "/Users/tobiasbuchholz/Work/PressMatrix/xamarin/PressMatrix/Plugin.Firebase/src/Plugin.Firebase/obj/",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netstandard2.0"
+    ],
+    "frameworks": {
+      "netstandard2.0": {
+        "projectReferences": {
+          "/Users/tobiasbuchholz/Work/PressMatrix/xamarin/PressMatrix/Plugin.Firebase/src/Plugin.Firebase.Abstractions/Plugin.Firebase.Abstractions.csproj": {
+            "projectPath": "/Users/tobiasbuchholz/Work/PressMatrix/xamarin/PressMatrix/Plugin.Firebase/src/Plugin.Firebase.Abstractions/Plugin.Firebase.Abstractions.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netstandard2.0": {
+      "dependencies": {
+        "NETStandard.Library": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.0.3, )",
+          "autoReferenced": true
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}
