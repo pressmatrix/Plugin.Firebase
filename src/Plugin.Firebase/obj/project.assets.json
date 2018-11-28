@@ -193,23 +193,23 @@
     ]
   },
   "packageFolders": {
-    "/Users/tobiasbuchholz/.nuget/packages/": {},
+    "/Users/compiler/.nuget/packages/": {},
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/tobiasbuchholz/Work/PressMatrix/xamarin/PressMatrix/Plugin.Firebase/src/Plugin.Firebase/Plugin.Firebase.csproj",
+      "projectUniqueName": "/Users/compiler/Documents/jenkins_remote_fs_root/workspace/app-build-android-xamarin.staging/Plugin.Firebase/src/Plugin.Firebase/Plugin.Firebase.csproj",
       "projectName": "Plugin.Firebase",
-      "projectPath": "/Users/tobiasbuchholz/Work/PressMatrix/xamarin/PressMatrix/Plugin.Firebase/src/Plugin.Firebase/Plugin.Firebase.csproj",
-      "packagesPath": "/Users/tobiasbuchholz/.nuget/packages/",
-      "outputPath": "/Users/tobiasbuchholz/Work/PressMatrix/xamarin/PressMatrix/Plugin.Firebase/src/Plugin.Firebase/obj/",
+      "projectPath": "/Users/compiler/Documents/jenkins_remote_fs_root/workspace/app-build-android-xamarin.staging/Plugin.Firebase/src/Plugin.Firebase/Plugin.Firebase.csproj",
+      "packagesPath": "/Users/compiler/.nuget/packages/",
+      "outputPath": "/Users/compiler/Documents/jenkins_remote_fs_root/workspace/app-build-android-xamarin.staging/Plugin.Firebase/src/Plugin.Firebase/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/tobiasbuchholz/.config/NuGet/NuGet.Config"
+        "/Users/compiler/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
@@ -220,8 +220,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "/Users/tobiasbuchholz/Work/PressMatrix/xamarin/PressMatrix/Plugin.Firebase/src/Plugin.Firebase.Abstractions/Plugin.Firebase.Abstractions.csproj": {
-              "projectPath": "/Users/tobiasbuchholz/Work/PressMatrix/xamarin/PressMatrix/Plugin.Firebase/src/Plugin.Firebase.Abstractions/Plugin.Firebase.Abstractions.csproj"
+            "/Users/compiler/Documents/jenkins_remote_fs_root/workspace/app-build-android-xamarin.staging/Plugin.Firebase/src/Plugin.Firebase.Abstractions/Plugin.Firebase.Abstractions.csproj": {
+              "projectPath": "/Users/compiler/Documents/jenkins_remote_fs_root/workspace/app-build-android-xamarin.staging/Plugin.Firebase/src/Plugin.Firebase.Abstractions/Plugin.Firebase.Abstractions.csproj"
             }
           }
         }
