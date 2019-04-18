@@ -97,6 +97,10 @@
       <HintPath>..\packages\Xamarin.Firebase.iOS.Core.5.1.8\lib\Xamarin.iOS10\Firebase.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Firebase.DynamicLinks, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\..\packages\Xamarin.Firebase.iOS.DynamicLinks.3.0.2.1\lib\Xamarin.iOS10\Firebase.DynamicLinks.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Firebase.InstanceID, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
       <HintPath>..\packages\Xamarin.Firebase.iOS.InstanceID.3.3.0\lib\Xamarin.iOS10\Firebase.InstanceID.dll</HintPath>
       <Private>True</Private>
@@ -135,6 +139,8 @@
     <Compile Include="Auth\Google\GoogleAuth.cs" />
     <Compile Include="Auth\PhoneNumber\PhoneNumberAuth.cs" />
     <Compile Include="CloudMessaging\FirebaseCloudMessagingImplementation.cs" />
+    <Compile Include="DynamicLinks\CrossFirebaseDynamicLinks.cs" />
+    <Compile Include="DynamicLinks\FirebaseDynamicLinksImplementation.cs" />
     <Compile Include="Extensions\DateExtensions.cs" />
     <Compile Include="Extensions\DictionaryExtension.cs" />
     <Compile Include="CrossFirebase.cs" />
@@ -180,6 +186,7 @@
     <Error Condition="!Exists('..\packages\Xamarin.Firebase.iOS.ABTesting.2.0.0.2\build\Xamarin.Firebase.iOS.ABTesting.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Firebase.iOS.ABTesting.2.0.0.2\build\Xamarin.Firebase.iOS.ABTesting.targets'))" />
     <Error Condition="!Exists('..\packages\Xamarin.Firebase.iOS.InstanceID.3.3.0\build\Xamarin.Firebase.iOS.InstanceID.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Firebase.iOS.InstanceID.3.3.0\build\Xamarin.Firebase.iOS.InstanceID.targets'))" />
     <Error Condition="!Exists('..\packages\Xamarin.Google.iOS.SignIn.4.4.0\build\Xamarin.Google.iOS.SignIn.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Google.iOS.SignIn.4.4.0\build\Xamarin.Google.iOS.SignIn.targets'))" />
+    <Error Condition="!Exists('..\..\..\packages\Xamarin.Firebase.iOS.DynamicLinks.3.0.2.1\build\Xamarin.Firebase.iOS.DynamicLinks.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\packages\Xamarin.Firebase.iOS.DynamicLinks.3.0.2.1\build\Xamarin.Firebase.iOS.DynamicLinks.targets'))" />
   </Target>
   <Import Project="..\packages\Xamarin.Build.Download.0.4.11\build\Xamarin.Build.Download.targets" Condition="Exists('..\packages\Xamarin.Build.Download.0.4.11\build\Xamarin.Build.Download.targets')" />
   <Import Project="..\packages\Xamarin.Firebase.iOS.RemoteConfig.3.0.1\build\Xamarin.Firebase.iOS.RemoteConfig.targets" Condition="Exists('..\packages\Xamarin.Firebase.iOS.RemoteConfig.3.0.1\build\Xamarin.Firebase.iOS.RemoteConfig.targets')" />
@@ -188,4 +195,5 @@
   <Import Project="..\packages\Xamarin.Firebase.iOS.ABTesting.2.0.0.2\build\Xamarin.Firebase.iOS.ABTesting.targets" Condition="Exists('..\packages\Xamarin.Firebase.iOS.ABTesting.2.0.0.2\build\Xamarin.Firebase.iOS.ABTesting.targets')" />
   <Import Project="..\packages\Xamarin.Firebase.iOS.InstanceID.3.3.0\build\Xamarin.Firebase.iOS.InstanceID.targets" Condition="Exists('..\packages\Xamarin.Firebase.iOS.InstanceID.3.3.0\build\Xamarin.Firebase.iOS.InstanceID.targets')" />
   <Import Project="..\packages\Xamarin.Google.iOS.SignIn.4.4.0\build\Xamarin.Google.iOS.SignIn.targets" Condition="Exists('..\packages\Xamarin.Google.iOS.SignIn.4.4.0\build\Xamarin.Google.iOS.SignIn.targets')" />
+  <Import Project="..\..\..\packages\Xamarin.Firebase.iOS.DynamicLinks.3.0.2.1\build\Xamarin.Firebase.iOS.DynamicLinks.targets" Condition="Exists('..\..\..\packages\Xamarin.Firebase.iOS.DynamicLinks.3.0.2.1\build\Xamarin.Firebase.iOS.DynamicLinks.targets')" />
 </Project>
