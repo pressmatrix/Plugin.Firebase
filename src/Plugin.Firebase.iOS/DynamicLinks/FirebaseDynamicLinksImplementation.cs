@@ -41,7 +41,7 @@ namespace Plugin.Firebase.DynamicLinks
         public static bool OpenUrl(UIApplication app, NSUrl url, NSDictionary options)
         {
 			var link = FirebaseDynamicLinks.SharedInstance.FromCustomSchemeUrl(url);
-			if(link == null) {
+			if(link == null || link.Url == null) {
 				return false;
 			} else {
 				HandleDynamicLink(link);
@@ -56,6 +56,11 @@ namespace Plugin.Firebase.DynamicLinks
         public string GetDynamicLink()
         {
 	        return _dynamicLink;
+        }
+
+        public IDynamicLinkBuilder CreateDynamicLink()
+        {
+	        return new DynamicLinkBuilder();
         }
 
         public event EventHandler<DynamicLinkReceivedEventArgs> DynamicLinkReceived {

@@ -140,6 +140,7 @@
     <Compile Include="Auth\PhoneNumber\PhoneNumberAuth.cs" />
     <Compile Include="CloudMessaging\FirebaseCloudMessagingImplementation.cs" />
     <Compile Include="DynamicLinks\CrossFirebaseDynamicLinks.cs" />
+    <Compile Include="DynamicLinks\DynamicLinkBuilder.cs" />
     <Compile Include="DynamicLinks\FirebaseDynamicLinksImplementation.cs" />
     <Compile Include="Extensions\DateExtensions.cs" />
     <Compile Include="Extensions\DictionaryExtension.cs" />
@@ -147,6 +148,7 @@
     <Compile Include="Extensions\FCMNotificationExtensions.cs" />
     <Compile Include="Extensions\ListExtensions.cs" />
     <Compile Include="Extensions\NSObjectExtension.cs" />
+    <Compile Include="Extensions\DynamicLinksExtensions.cs" />
     <Compile Include="Firestore\CollectionReferenceWrapper.cs" />
     <Compile Include="Firestore\DocumentReferenceWrapper.cs" />
     <Compile Include="Firestore\DocumentSnapshotWrapper.cs" />

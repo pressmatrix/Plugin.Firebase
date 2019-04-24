@@ -31,7 +31,12 @@ namespace Plugin.Firebase.DynamicLinks
         {
             return _dynamicLink;
         }
-        
+
+        public IDynamicLinkBuilder CreateDynamicLink()
+        {
+            return new DynamicLinkBuilder();
+        }
+
         public void Dispose()
         {
         }
