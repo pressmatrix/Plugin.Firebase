@@ -20,7 +20,7 @@ namespace Plugin.Firebase.DynamicLinks
         {
             try {
                 var dynamicLink = (PendingDynamicLinkData) await FirebaseDynamicLinks.Instance.GetDynamicLink(intent);
-                _dynamicLink = dynamicLink.Link.Path;
+                _dynamicLink = dynamicLink.Link.ToString();
                 _dynamicLinkReceived?.Invoke(null, new DynamicLinkReceivedEventArgs(_dynamicLink));
             } catch(Exception e) {
                 _dynamicLinkFailed?.Invoke(null, new DynamicLinkFailedEventArgs(e.Message));
