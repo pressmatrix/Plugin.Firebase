@@ -29,7 +29,7 @@ namespace Plugin.Firebase.Abstractions.CloudMessaging
         }
 
         public string Body => _body ?? Data?["body"];
-        public string Title => _title ?? Data?["title"];
+        public string Title => _title ?? (Data != null && Data.Any() ? Data["title"] : "");
         public IDictionary<string, string> Data { get; }
     }
 }
