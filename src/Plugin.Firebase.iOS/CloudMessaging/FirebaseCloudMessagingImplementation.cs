@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using Firebase.CloudMessaging;
 using Firebase.InstanceID;
 using Foundation;
@@ -26,6 +27,11 @@ namespace Plugin.Firebase.CloudMessaging
         }
 
         public void OnTokenRefresh()
+        {
+            OnNewToken(InstanceId.SharedInstance.Token);
+        }
+
+        public void OnNewToken(string token)
         {
             TokenChanged?.Invoke(this, new FCMTokenChangedEventArgs(InstanceId.SharedInstance.Token));
         }
@@ -78,6 +84,11 @@ namespace Plugin.Firebase.CloudMessaging
             NotificationReceived?.Invoke(this, new FCMNotificationReceivedEventArgs(message));
         }
 
+        public Task<string> GetTokenAsync()
+        {
+            return Task.FromResult(InstanceId.SharedInstance.Token);
+        }
+
         [Export("userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:")]
         public void DidReceiveNotificationResponse(UNUserNotificationCenter center, UNNotificationResponse response, Action completionHandler)
         {
@@ -94,7 +105,5 @@ namespace Plugin.Firebase.CloudMessaging
         public event EventHandler<FCMNotificationReceivedEventArgs> NotificationReceived;
         public event EventHandler<FCMNotificationTappedEventArgs> NotificationTapped;
         public event EventHandler<FCMErrorEventArgs> Error;
-
-        public string Token => InstanceId.SharedInstance.Token;
     }
 }

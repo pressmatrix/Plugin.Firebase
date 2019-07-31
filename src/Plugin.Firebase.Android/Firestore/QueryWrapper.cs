@@ -67,20 +67,12 @@ namespace Plugin.Firebase.Android.Firestore
 
         public IDisposable AddSnapshotListener<T>(Action<IQuerySnapshot<T>> onChanged, Action<Exception> onError = null, bool includeMetaDataChanges = false)
         {
-            var registration = _query
-                .AddSnapshotListener(GetQueryListenOptions(includeMetaDataChanges), new EventListener(
+            var registration = _query.AddSnapshotListener(
+                includeMetaDataChanges ? MetadataChanges.Include : MetadataChanges.Exclude, 
+                new EventListener(
                     x => onChanged(new QuerySnapshotWrapper<T>(x.JavaCast<QuerySnapshot>())), 
                     e => onError?.Invoke(new FirebaseException(e.LocalizedMessage))));
             return new DisposableWithAction(registration.Remove);
-        }
-
-        private static QueryListenOptions GetQueryListenOptions(bool includeMetaDataChanges)
-        {
-            var options = new QueryListenOptions();
-            if(includeMetaDataChanges) {
-                options.IncludeQueryMetadataChanges();
-            }
-            return options;
         }
     }
 }

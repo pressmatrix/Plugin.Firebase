@@ -1,9 +1,12 @@
 ﻿using System;
+using System.Threading.Tasks;
 using Android.App;
 using Android.Content;
 using Android.Gms.Common;
+using Android.Gms.Extensions;
 using Android.Support.V4.App;
 using Firebase.Iid;
+using Java.Interop;
 using Plugin.Firebase.Abstractions.CloudMessaging;
 using Plugin.Firebase.Abstractions.CloudMessaging.EventArgs;
 using Plugin.Firebase.Abstractions.Common;
@@ -25,9 +28,7 @@ namespace Plugin.Firebase.CloudMessaging
         public void CheckIfValid()
         {
             var resultCode = GoogleApiAvailability.Instance.IsGooglePlayServicesAvailable(_context);
-            if (resultCode == ConnectionResult.Success) {
-                OnTokenRefresh();
-            } else {
+            if (resultCode != ConnectionResult.Success) {
                 Error?.Invoke(this, new FCMErrorEventArgs(GetErrorMessage(resultCode)));
             }
         }
@@ -41,9 +42,26 @@ namespace Plugin.Firebase.CloudMessaging
 
         public void OnTokenRefresh()
         {
-            TokenChanged?.Invoke(this, new FCMTokenChangedEventArgs(FirebaseInstanceId.Instance.Token));
+            #pragma warning disable 4014
+            RefreshTokenAsync();
+            #pragma warning restore 4014
         }
 
+        private async Task RefreshTokenAsync()
+        {
+            OnNewToken(await GetTokenAsync());
+        }
+
+        public async Task<string> GetTokenAsync()
+        {
+            return (await FirebaseInstanceId.Instance.GetInstanceId()).JavaCast<IInstanceIdResult>().Token;
+        }
+
+        public void OnNewToken(string token)
+        {
+            TokenChanged?.Invoke(this, new FCMTokenChangedEventArgs(token));
+        }
+        
         public void OnNotificationReceived(FCMNotification fcmNotification)
         {
             NotificationReceived?.Invoke(this, new FCMNotificationReceivedEventArgs(fcmNotification));
@@ -94,6 +112,5 @@ namespace Plugin.Firebase.CloudMessaging
         public event EventHandler<FCMNotificationReceivedEventArgs> NotificationReceived;
         public event EventHandler<FCMNotificationTappedEventArgs> NotificationTapped;
         public event EventHandler<FCMErrorEventArgs> Error;
-        public string Token => FirebaseInstanceId.Instance.Token;
     }
 }

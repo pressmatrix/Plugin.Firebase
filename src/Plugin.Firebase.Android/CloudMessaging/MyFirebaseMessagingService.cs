@@ -1,9 +1,10 @@
-﻿using Android.App;
+﻿using System;
+using Android.App;
 using Firebase.Messaging;
 using Plugin.Firebase.Android.Extensions;
 using Plugin.Firebase.CloudMessaging;
 
-namespace Plugin.Firebase.Android.IntentServices
+namespace Plugin.Firebase.Android.CloudMessaging
 {
     [Service]
     [IntentFilter(new [] { "com.google.firebase.MESSAGING_EVENT" })]
@@ -13,6 +14,12 @@ namespace Plugin.Firebase.Android.IntentServices
         {
             base.OnMessageReceived(message);
             CrossFirebaseCloudMessaging.Current.OnNotificationReceived(message.ToFCMNotification());
+        }
+
+        public override void OnNewToken(string token)
+        {
+            base.OnNewToken(token);
+            CrossFirebaseCloudMessaging.Current.OnNewToken(token);
         }
     }
 }
