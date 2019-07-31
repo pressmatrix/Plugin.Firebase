@@ -50,15 +50,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Facebook.CoreKit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\packages\Xamarin.Facebook.CoreKit.iOS.4.40.0\lib\Xamarin.iOS10\Facebook.CoreKit.dll</HintPath>
+      <HintPath>..\packages\Xamarin.Facebook.CoreKit.iOS.5.0.2\lib\xamarinios10\Facebook.CoreKit.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Facebook.LoginKit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\packages\Xamarin.Facebook.LoginKit.iOS.4.40.0\lib\Xamarin.iOS10\Facebook.LoginKit.dll</HintPath>
+      <HintPath>..\packages\Xamarin.Facebook.LoginKit.iOS.5.0.2\lib\xamarinios10\Facebook.LoginKit.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Facebook.MarketingKit, Version=1.0.7012.32272, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\packages\Xamarin.Facebook.MarketingKit.iOS.4.40.0\lib\Xamarin.iOS10\Facebook.MarketingKit.dll</HintPath>
+    <Reference Include="Facebook.MarketingKit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\packages\Xamarin.Facebook.MarketingKit.iOS.5.0.0\lib\xamarinios10\Facebook.MarketingKit.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Facebook.MessengerShareKit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
@@ -66,11 +66,11 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Facebook.PlacesKit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\packages\Xamarin.Facebook.PlacesKit.iOS.4.40.0\lib\Xamarin.iOS10\Facebook.PlacesKit.dll</HintPath>
+      <HintPath>..\packages\Xamarin.Facebook.PlacesKit.iOS.5.0.2\lib\xamarinios10\Facebook.PlacesKit.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Facebook.ShareKit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\packages\Xamarin.Facebook.ShareKit.iOS.4.40.0\lib\Xamarin.iOS10\Facebook.ShareKit.dll</HintPath>
+      <HintPath>..\packages\Xamarin.Facebook.ShareKit.iOS.5.0.2\lib\xamarinios10\Facebook.ShareKit.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Firebase.ABTesting, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
@@ -98,7 +98,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Firebase.DynamicLinks, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\..\..\packages\Xamarin.Firebase.iOS.DynamicLinks.3.0.2.1\lib\Xamarin.iOS10\Firebase.DynamicLinks.dll</HintPath>
+      <HintPath>..\packages\Xamarin.Firebase.iOS.DynamicLinks.3.0.2.1\lib\Xamarin.iOS10\Firebase.DynamicLinks.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Firebase.InstanceID, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
@@ -188,7 +188,7 @@
     <Error Condition="!Exists('..\packages\Xamarin.Firebase.iOS.ABTesting.2.0.0.2\build\Xamarin.Firebase.iOS.ABTesting.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Firebase.iOS.ABTesting.2.0.0.2\build\Xamarin.Firebase.iOS.ABTesting.targets'))" />
     <Error Condition="!Exists('..\packages\Xamarin.Firebase.iOS.InstanceID.3.3.0\build\Xamarin.Firebase.iOS.InstanceID.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Firebase.iOS.InstanceID.3.3.0\build\Xamarin.Firebase.iOS.InstanceID.targets'))" />
     <Error Condition="!Exists('..\packages\Xamarin.Google.iOS.SignIn.4.4.0\build\Xamarin.Google.iOS.SignIn.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Google.iOS.SignIn.4.4.0\build\Xamarin.Google.iOS.SignIn.targets'))" />
-    <Error Condition="!Exists('..\..\..\packages\Xamarin.Firebase.iOS.DynamicLinks.3.0.2.1\build\Xamarin.Firebase.iOS.DynamicLinks.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\packages\Xamarin.Firebase.iOS.DynamicLinks.3.0.2.1\build\Xamarin.Firebase.iOS.DynamicLinks.targets'))" />
+    <Error Condition="!Exists('..\packages\Xamarin.Firebase.iOS.DynamicLinks.3.0.2.1\build\Xamarin.Firebase.iOS.DynamicLinks.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Firebase.iOS.DynamicLinks.3.0.2.1\build\Xamarin.Firebase.iOS.DynamicLinks.targets'))" />
   </Target>
   <Import Project="..\packages\Xamarin.Build.Download.0.4.11\build\Xamarin.Build.Download.targets" Condition="Exists('..\packages\Xamarin.Build.Download.0.4.11\build\Xamarin.Build.Download.targets')" />
   <Import Project="..\packages\Xamarin.Firebase.iOS.RemoteConfig.3.0.1\build\Xamarin.Firebase.iOS.RemoteConfig.targets" Condition="Exists('..\packages\Xamarin.Firebase.iOS.RemoteConfig.3.0.1\build\Xamarin.Firebase.iOS.RemoteConfig.targets')" />
@@ -197,5 +197,5 @@
   <Import Project="..\packages\Xamarin.Firebase.iOS.ABTesting.2.0.0.2\build\Xamarin.Firebase.iOS.ABTesting.targets" Condition="Exists('..\packages\Xamarin.Firebase.iOS.ABTesting.2.0.0.2\build\Xamarin.Firebase.iOS.ABTesting.targets')" />
   <Import Project="..\packages\Xamarin.Firebase.iOS.InstanceID.3.3.0\build\Xamarin.Firebase.iOS.InstanceID.targets" Condition="Exists('..\packages\Xamarin.Firebase.iOS.InstanceID.3.3.0\build\Xamarin.Firebase.iOS.InstanceID.targets')" />
   <Import Project="..\packages\Xamarin.Google.iOS.SignIn.4.4.0\build\Xamarin.Google.iOS.SignIn.targets" Condition="Exists('..\packages\Xamarin.Google.iOS.SignIn.4.4.0\build\Xamarin.Google.iOS.SignIn.targets')" />
-  <Import Project="..\..\..\packages\Xamarin.Firebase.iOS.DynamicLinks.3.0.2.1\build\Xamarin.Firebase.iOS.DynamicLinks.targets" Condition="Exists('..\..\..\packages\Xamarin.Firebase.iOS.DynamicLinks.3.0.2.1\build\Xamarin.Firebase.iOS.DynamicLinks.targets')" />
+  <Import Project="..\packages\Xamarin.Firebase.iOS.DynamicLinks.3.0.2.1\build\Xamarin.Firebase.iOS.DynamicLinks.targets" Condition="Exists('..\packages\Xamarin.Firebase.iOS.DynamicLinks.3.0.2.1\build\Xamarin.Firebase.iOS.DynamicLinks.targets')" />
 </Project>

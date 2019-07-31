@@ -26,7 +26,7 @@ namespace Plugin.Firebase.Auth
             var googleServiceDictionary = NSDictionary.FromFile("GoogleService-Info.plist");
             SignIn.SharedInstance.ClientID = googleServiceDictionary["CLIENT_ID"].ToString();
             
-            Settings.AppID = facebookAppId;
+            Settings.AppId = facebookAppId;
             Settings.DisplayName = facebookDisplayName;
             ApplicationDelegate.SharedInstance.FinishedLaunching(application, launchOptions);
         }
